@@ -1,4 +1,4 @@
-let count = 1000
+let count = 0
 let cps = 0
 function producer(price,cps){
     this.price = price
