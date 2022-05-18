@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="./counter.js"></script>
+    <link rel="stylesheet" href="counter.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>カウンター</title>
 </head>
-<body>
+<body onload="inter()">
     <h1>カウンター</h1>
     <div id="count">回数：0</div>
     <button onclick="countUp()">クリック！</button>
+    <button onclick="buyCursor()" id="buyCursor">
+        <p>
+            <div class="name">cursor</div>
+        </p>
+        <p>
+            <div id="cpsCursor">1cps</div>
+        </p>
+        <p>
+            <div id="priceCursor">20 count</div>
+        </p>
+        <p>
+            <div id="numCursor" class="num">0 </div>
+        </p>
+    </button>
+    <button onclick="buyBBA()" id="buyBBA">
+        <p>
+            <div class="name">Basic Boosting Asistant</div>
+        </p>
+        <p>
+            <div id="cpsBBA">10cps</div>
+        </p>
+        <p>
+            <div id="priceBBA">100 count</div>
+        </p>
+        <p>
+            <div id="numBBA" class="num">0 </div>
+        </p>
+    </button>
+    <div id="cps">0count-per-second</div>
 </body>
 </html>
